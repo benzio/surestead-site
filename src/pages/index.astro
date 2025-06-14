@@ -5,27 +5,23 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 <BaseLayout>
 	<section class="bg-white mx-auto my-0 font-sans">
 		<!-- Hero Section -->
-		<div class="grid grid-cols-1 md:grid-cols-2 h-full items-center m-0">
-			<!-- Left: Heading -->
-			<div class="p-36">
-				<h1 class="text-6xl md:text-7xl mb-4 font-outfit">
-					Raising the Standard in Property Management
-				</h1>
+		<div class="grid grid-cols-1 md:grid-cols-2 w-full">
+			<!-- Left: Heading box -->
+			<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-white p-24 md:p-40 shadow-inner">
+			  <h1 class="text-7xl md:text-8xl font-outfit leading-tight">
+				Raising the<br />Standard<br />in Property<br />Management
+			  </h1>
 			</div>
-
-			<!-- Right: Paragraph (with vertical centering) -->
-			<div
-				class="bg-surestead-gray h-full flex items-center justify-center p-24">
-				<p
-					class="text-white text-xl font-roboto max-w-prose text-center">
-					Anyone who's interacted with property management firms knows
-					there is room for improvement. Many owners are underserved
-					on critical fronts like communication, financial
-					transparency, and property maintenance, creating frustration
-					and eroding trust.
-				</p>
+		  
+			<!-- Right: Paragraph box -->
+			<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-surestead-gray p-12 md:p-40">
+			  <p class="text-white text-2xl font-roboto text-center leading-relaxed max-w-prose">
+				Anyone who's interacted with property management firms knows there is room for improvement.
+				Many owners are underserved on communication, transparency, and maintenance — eroding trust.
+			  </p>
 			</div>
-		</div>
+		  </div>
+		  
 
 		<!-- Green Bar -->
 		<div
