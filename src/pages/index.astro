@@ -1,16 +1,150 @@
 ---
-
+import BaseLayout from "../layouts/Base_Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<section class="bg-white mx-auto font-sans">
+		<!-- Hero Section -->
+		<div class="grid grid-cols-1 md:grid-cols-2 h-full items-center m-0">
+			<!-- Left: Heading -->
+			<div class="p-36">
+				<h1 class="text-6xl md:text-7xl mb-4 font-outfit">
+					Raising the Standard in Property Management
+				</h1>
+			</div>
+
+			<!-- Right: Paragraph (with vertical centering) -->
+			<div
+				class="bg-surestead-gray h-full flex items-center justify-center p-24">
+				<p
+					class="text-white text-xl font-roboto max-w-prose text-center">
+					Anyone who's interacted with property management firms knows
+					there is room for improvement. Many owners are underserved
+					on critical fronts like communication, financial
+					transparency, and property maintenance, creating frustration
+					and eroding trust.
+				</p>
+			</div>
+		</div>
+
+		<!-- Green Bar -->
+		<div
+			class="m-0 bg-surestead-green text-center text-xl py-8 font-bold text-black rounded">
+			Property management should feel responsive, not reactive.
+		</div>
+
+		<!-- Two Columns with Icon -->
+		<div
+			class="grid grid-cols-1 md:grid-cols-3 gap-8 py-24 px-30 text-center bg-white">
+			<!-- Left column -->
+			<div class="flex items-center justify-center px-4">
+				<p class="max-w-sm mx-auto text-xl font-roboto">
+					Owners deserve consistent service, not last-minute fixes.
+					Residents should feel heard, not handled.
+				</p>
+			</div>
+
+			<!-- Center icon -->
+			<div class="flex items-center justify-center">
+				<picture>
+					<img
+						src="/SPS_mrk.svg"
+						alt="Surestead Logo Mark"
+						class="h-36 w-auto"
+					/>
+				</picture>
+			</div>
+
+			<!-- Right column -->
+			<div class="flex items-center justify-center px-4">
+				<p class="max-w-sm mx-auto text-xl font-roboto">
+					With over 20 years of experience, we have the tools and
+					commitment to set a higher standard.
+				</p>
+			</div>
+		</div>
+
+		<!-- Values Section -->
+		<div class="grid grid-cols-1 md:grid-cols-2 h-full m-0 items-center">
+			<div class="p-12 py-24 max-w-md mx-auto">
+				<h2 class="text-6xl md:text-7xl mb-2 font-outfit">
+					Our Values Are Our Foundation
+				</h2>
+			</div>
+			<div
+				class="bg-surestead-gray h-full flex items-center justify-center p-24">
+				<p class="text-white text-xl font-roboto">
+					We've built our service-first approach around financial
+					clarity, personalized support, and modern digital
+					infrastructure. From automated workflows to clear monthly
+					reporting and hands-on problem solving, our process is
+					tailored to earn lasting trust.
+				</p>
+			</div>
+		</div>
+
+		<!-- Green Bar -->
+		<div
+			class="m-0 bg-surestead-green text-center text-xl py-8 font-bold text-black rounded">
+			The customer is our priority.
+		</div>
+
+		<!-- Two Columns with Icon -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-24 px-30 text-center bg-white">
+			<!-- Left column -->
+			<div class="flex items-center justify-center px-4">
+			  <p class="max-w-sm mx-auto text-xl font-roboto">
+				Thoughtful communication, dependability, and proactive management underpin everything we do, enabling outstanding
+			  </p>
+			</div>
+		  
+			<!-- Center logo -->
+			<div class="flex items-center justify-center">
+			  <picture>
+				<img src="/SPS_mrk.svg" alt="Surestead Logo Mark" class="h-36 w-auto" />
+			  </picture>
+			</div>
+		  
+			<!-- Right column -->
+			<div class="flex items-center justify-center px-4">
+			  <p class="max-w-sm mx-auto text-xl font-roboto">
+				Experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the competition.
+			  </p>
+			</div>
+		  </div>
+		  
+	</section>
+	<div class="flex items-center justify-center text-center py-24 px-6 bg-white">
+		<p class="text-xl font-roboto max-w-2xl mx-auto leading-relaxed">
+		  THE SURESTEAD PROMISE<br />
+		  <span class="font-bold">Structure | Reliability | Peace of mind</span><br />
+		  <span class="whitespace-nowrap">With Surestead, your properties are profitable, well-maintained, and stress&#8209;free.</span>
+		</p>
+	  </div>
+	  
+	  
+	  
+	<!-- Call to Action -->
+<div class="flex flex-col items-center gap-24 py-8 px-12 bg-white rounded mt-8 md:flex-row md:justify-center">
+	<!-- Logo -->
+	<img src="/SPS_logo_light.svg" alt="Surestead Logo" class="h-14 w-auto" />
+  
+	<!-- Button -->
+	<a
+	  href="/contact"
+	  class="bg-surestead-dark text-white px-6 py-3 rounded font-bold hover:bg-green-200 hover:text-surestead-dark transition inline-flex items-center space-x-2"
+	>
+	  <span>Let’s become trusted partners</span>
+	  <span class="text-xl">»</span>
+	</a>
+  </div>
+  
+  <!-- Subtext below -->
+  <div class="text-center mt-3">
+	<p class="font-roboto">
+	  Explore our <a href="/services" class="underline font-semibold">Services</a> page or
+	  <a href="/contact" class="underline font-semibold">contact us</a> to learn more.
+	</p>
+  </div>
+  
+</BaseLayout>
