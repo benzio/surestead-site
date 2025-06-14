@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -21,4 +23,37 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
   --color-surestead-green: #d6f5b0;
   --color-surestead-dark: #444444;
   --color-surestead-gray: #A0A0A0;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-heading-xl {
+    font-size: 5.58rem; /* 67pt */
+    line-height: 5.67rem; /* 68pt */
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .text-body-lg {
+    font-size: 2.08rem; /* 25pt */
+    line-height: 3.33rem; /* 40pt */
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .text-hero-md {
+    font-size: 3.5rem;
+    line-height: 5.16rem;
+  }
+
+  .text-subhead {
+    font-size: 2.75rem;
+    line-height: 3.33rem;
+  }
+
+  .text-surestead-green {
+    color: #d6f5b0;
+  }
+
+  .bg-surestead-dark {
+    background-color: #444444;
+  }
 }

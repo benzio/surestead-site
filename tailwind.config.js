@@ -13,6 +13,10 @@ module.exports = {
         'surestead-green': '#d6f5b0', // Adjust as needed
         'surestead-dark': '#444444',  // Adjust as needed
       },
+      fontSize: {
+        'body-lg': ['2.08rem', { lineHeight: '3.33rem' }],
+        'heading-xl': ['5.58rem', { lineHeight: '5.67rem' }],
+      },
     },
   },
   plugins: [],

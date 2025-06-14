@@ -8,14 +8,14 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		<div class="grid grid-cols-1 md:grid-cols-2 w-full">
 			<!-- Left: Heading box -->
 			<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-white p-24 md:p-40 shadow-inner">
-			  <h1 class="text-7xl md:text-8xl font-outfit leading-tight">
+			  <h1 class="text-heading-xl font-outfit font-medium leading-tight">
 				Raising the<br />Standard<br />in Property<br />Management
 			  </h1>
 			</div>
 		  
 			<!-- Right: Paragraph box -->
 			<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-surestead-gray p-12 md:p-40">
-			  <p class="text-white text-2xl font-roboto text-center leading-relaxed max-w-prose">
+			  <p class="text-white text-body-lg font-roboto leading-relaxed max-w-prose">
 				Anyone who's interacted with property management firms knows there is room for improvement.
 				Many owners are underserved on communication, transparency, and maintenance — eroding trust.
 			  </p>
@@ -25,7 +25,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 
 		<!-- Green Bar -->
 		<div
-			class="m-0 bg-surestead-green text-center text-xl py-8 font-bold text-black rounded">
+			class="m-0 bg-surestead-green text-center text-body-lg py-8 font-bold text-black rounded">
 			Property management should feel responsive, not reactive.
 		</div>
 
@@ -34,7 +34,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			class="grid grid-cols-1 md:grid-cols-3 gap-8 py-24 px-30 text-center bg-white">
 			<!-- Left column -->
 			<div class="flex items-center justify-center px-4">
-				<p class="max-w-sm mx-auto text-xl font-roboto">
+				<p class="max-w-sm mx-auto text-body-lg font-roboto">
 					Owners deserve consistent service, not last-minute fixes.
 					Residents should feel heard, not handled.
 				</p>
@@ -53,7 +53,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 
 			<!-- Right column -->
 			<div class="flex items-center justify-center px-4">
-				<p class="max-w-sm mx-auto text-xl font-roboto">
+				<p class="max-w-sm mx-auto text-body-lg font-roboto">
 					With over 20 years of experience, we have the tools and
 					commitment to set a higher standard.
 				</p>
@@ -61,27 +61,28 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		</div>
 
 		<!-- Values Section -->
-		<div class="grid grid-cols-1 md:grid-cols-2 h-full m-0 items-center">
-			<div class="p-12 py-24 max-w-md mx-auto">
-				<h2 class="text-6xl md:text-7xl mb-2 font-outfit">
-					Our Values Are Our Foundation
-				</h2>
-			</div>
-			<div
-				class="bg-surestead-gray h-full flex items-center justify-center p-24">
-				<p class="text-white text-xl font-roboto">
-					We've built our service-first approach around financial
-					clarity, personalized support, and modern digital
-					infrastructure. From automated workflows to clear monthly
-					reporting and hands-on problem solving, our process is
-					tailored to earn lasting trust.
-				</p>
-			</div>
-		</div>
+<div class="grid grid-cols-1 md:grid-cols-2 w-full">
+	<!-- Left: Heading box -->
+	<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-white p-24 md:p-40 shadow-inner">
+	  <h2 class="text-heading-xl font-outfit leading-tight text-center">
+		Our Values<br />Are Our<br />Foundation
+	  </h2>
+	</div>
+  
+	<!-- Right: Paragraph box -->
+	<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-surestead-gray p-12 md:p-40">
+	  <p class="text-white text-body-lg font-roboto leading-relaxed max-w-prose">
+		We've built our service-first approach around financial clarity, personalized support,
+		and modern digital infrastructure. From automated workflows to clear monthly reporting
+		and hands-on problem solving, our process is tailored to earn lasting trust.
+	  </p>
+	</div>
+  </div>
+  
 
 		<!-- Green Bar -->
 		<div
-			class="m-0 bg-surestead-green text-center text-xl py-8 font-bold text-black rounded">
+			class="m-0 bg-surestead-green text-center text-body-lg py-8 font-bold text-black rounded">
 			The customer is our priority.
 		</div>
 
@@ -89,7 +90,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-24 px-30 text-center bg-white">
 			<!-- Left column -->
 			<div class="flex items-center justify-center px-4">
-			  <p class="max-w-sm mx-auto text-xl font-roboto">
+			  <p class="max-w-sm mx-auto text-body-lg font-roboto">
 				Thoughtful communication, dependability, and proactive management underpin everything we do, enabling outstanding
 			  </p>
 			</div>
@@ -103,18 +104,18 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		  
 			<!-- Right column -->
 			<div class="flex items-center justify-center px-4">
-			  <p class="max-w-sm mx-auto text-xl font-roboto">
+			  <p class="max-w-sm mx-auto text-body-lg font-roboto">
 				Experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the competition.
 			  </p>
 			</div>
 		  </div>
 		  
 	
-	<div class="flex items-center justify-center text-center py-24 px-6 bg-white">
-		<p class="text-xl font-roboto max-w-2xl mx-auto leading-relaxed">
+	<div class="flex items-center justify-center text-center py-24 px-12 align-middle text-center bg-white">
+		<p class="text-hero-md font-roboto max-w-7xl text-center mx-auto leading-relaxed">
 		  THE SURESTEAD PROMISE<br />
-		  <span class="font-bold">Structure | Reliability | Peace of mind</span><br />
-		  <span class="whitespace-nowrap">With Surestead, your properties are profitable, well-maintained, and stress&#8209;free.</span>
+		  <span class="font-bold text-subhead">Structure | Reliability | Peace of mind</span><br />
+		  <span class="whitespace-nowrap text-body-lg">With Surestead, your properties are profitable, well-maintained, and stress&#8209;free.</span>
 		</p>
 	  </div>
 	  
@@ -123,15 +124,15 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<!-- Call to Action -->
 <div class="flex flex-col items-center gap-24 py-8 px-12 bg-white rounded mt-8 md:flex-row md:justify-center">
 	<!-- Logo -->
-	<img src="/SPS_logo_light.svg" alt="Surestead Logo" class="h-14 w-auto" />
+	<img src="/SPS_logo_light.svg" alt="Surestead Logo" class="h-32 w-auto" />
   
 	<!-- Button -->
 	<a
 	  href="/contact"
-	  class="bg-surestead-dark text-white px-6 py-3 rounded font-bold hover:bg-green-200 hover:text-surestead-dark transition inline-flex items-center space-x-2"
+	  class="bg-surestead-dark text-white px-10 py-8 rounded font-bold hover:bg-green-200 hover:text-surestead-dark transition inline-flex items-center space-x-2"
 	>
-	  <span>Let’s become trusted partners</span>
-	  <span class="text-xl">»</span>
+	  <span class="text-subhead">Let’s become trusted partners</span>
+	  <span class="text-body-lg">»</span>
 	</a>
   </div>
   
