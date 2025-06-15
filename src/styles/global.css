@@ -57,3 +57,12 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
     background-color: #444444;
   }
 }
+
+#mobileMenu {
+  height: 100vh;
+}
+
+#closeButton {
+    margin-top: -65px;
+    margin-right: 7px;
+}
