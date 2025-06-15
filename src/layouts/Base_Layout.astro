@@ -17,13 +17,13 @@ import "../styles/global.css";
   <body class="bg-gray-100 leading-tight text-gray-900 overflow-x-hidden">
     <header class="bg-surestead-dark text-white shadow py-4 px-6">
       <nav
-        class="max-w-8xl mx-auto flex items-center justify-between px-6 md:px-24 relative">
+        class="max-w-8xl mx-auto flex items-center justify-between px-6 md:px-0 xl:px-24 relative">
         <!-- Logo -->
         <picture class="ml-4">
           <img
             src="/SPS_logo_dark.svg"
             alt="Surestead Logo"
-            class="h-12 md:h-20 lg:h-24 w-auto"
+            class="h-12 md:h-20 w-auto flex-shrink-0"
           />
         </picture>
 
@@ -51,7 +51,11 @@ import "../styles/global.css";
         <!-- Navigation Items -->
         <ul
           id="navMenu"
-          class="hidden md:flex text-sm sm:text-base md:text-lg font-bold items-center justify-between uppercase space-x-6 sm:space-x-12 md:space-x-24 mr-4 sm:mr-12 md:mr-36">
+          class="hidden md:flex text-sm sm:text-base md:text-lg font-bold items-center justify-between uppercase
+                 space-x-4 sm:space-x-8 md:space-x-8 lg:space-x-24
+                 mr-2 sm:mr-8 md:mr-8 lg:mr-36
+                 md:ml-auto lg:ml-0"
+        >
           <li><a href="/" class="hover:underline">About Us</a></li>
           <li><a href="/services" class="hover:underline">Our Services</a></li>
           <li><a href="/contact" class="hover:underline">Contact Us</a></li>
