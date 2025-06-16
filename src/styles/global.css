@@ -21,7 +21,8 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
 
 @theme {
   --color-surestead-green: #d6f5b0;
-  --color-surestead-dark: #444444;
+  --color-surestead-green-hover: #8dc126;
+  --color-surestead-dark: #606060;
   --color-surestead-gray: #A0A0A0;
 }
 
@@ -65,4 +66,8 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
 #closeButton {
     margin-top: -65px;
     margin-right: 7px;
+}
+
+#navMenu li a:hover {
+  color: #8dc126;
 }
