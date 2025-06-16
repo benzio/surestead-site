@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
   --color-surestead-green-hover: #8dc126;
   --color-surestead-dark: #606060;
   --color-surestead-gray: #A0A0A0;
+  --color-surestead-lightgray: #f1f2f2;
 }
 
 /* Custom utility classes */
