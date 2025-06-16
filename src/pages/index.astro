@@ -115,7 +115,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<p class="text-3xl md:text-hero-md font-roboto max-w-7xl text-center mx-auto leading-relaxed">
 		  
 			  <!-- Title Line (no break) -->
-			  <span class="block relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-1rem] after:w-[500px] md:after:w-[700px] after:h-1 after:bg-[#8dc126]">THE SURESTEAD PROMISE</span>
+			  <span class="block relative font-bold after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-1rem] after:w-[500px] md:after:w-[700px] after:h-1 after:bg-[#8dc126]">THE SURESTEAD PROMISE</span>
 		  
 			  <!-- Subtitle Line (no break, all 3 words stay together) -->
 			  <span class="block font-bold text-2xl mt-8 md:text-subhead">Structure&nbsp;&nbsp; | &nbsp;&nbsp;Reliability&nbsp;&nbsp; | &nbsp;&nbsp;Peace of mind</span>
@@ -132,15 +132,15 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	  
 	  
 	<!-- Call to Action -->
-	<div class="flex flex-col items-center gap-8 py-8 px-4 md:px-12 bg-white rounded mt-8">
+	<div class="flex flex-col items-center gap-8 py-8 px-4 md:px-12 bg-white rounded mt-8 [@media(min-width:1238px)]:flex-row [@media(min-width:1238px)]:justify-center [@media(min-width:1238px)]:gap-24">
 
 	<!-- Logo -->
-	<img src="/SPS_Logo_with_Lettering.svg" alt="Surestead Logo" class="h-24 md:h-32 w-full max-w-md" />
+	<img src="/SPS_Logo_with_Lettering.svg" alt="Surestead Logo" class="h-24 md:h-32 w-auto" />
   
 	<!-- Button -->
 	<a
 	  href="/contact"
-	  class="w-full max-w-md bg-surestead-dark hover:bg-surestead-green-hover text-white px-6 md:px-10 py-6 md:py-8 font-bold hover:bg-green-200 hover:text-surestead-dark transition inline-flex items-center justify-center space-x-2"
+	  class="bg-surestead-dark hover:bg-surestead-green-hover text-white px-6 md:px-10 py-6 md:py-8 font-bold hover:bg-green-200 hover:text-surestead-dark transition inline-flex items-center justify-center space-x-2"
 	>
 	  <span class="text-xl md:text-[2.08rem]">Let's become trusted partners</span>
 	  <span class="text-xl md:text-[2.08rem]">»</span>
