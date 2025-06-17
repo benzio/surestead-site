@@ -80,7 +80,7 @@ button:hover {
 
 @media (max-width: 1200px) {
   .responsive-hero {
-    font-size: 4rem;
+    font-size: 3.25rem;
     line-height: 3.5rem;
   }
   .text-body-lg {

@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 ---
 
 <BaseLayout>
-	<section class="bg-white mx-auto my-0 font-sans">
+	<section class="bg-white mx-auto my-0 font-sans overflow-x-hidden">
 		<!-- Hero Section -->
 		<div class="grid grid-cols-1 md:grid-cols-2 w-full">
 			<!-- Left -->
@@ -27,19 +27,19 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 
 		<!-- Green Bar -->
 		<div
-			class="m-0 bg-surestead-green text-center text-base sm:text-lg md:text-[2.08rem] py-6 md:py-8 font-medium text-black rounded">
-			Property management should feel responsive, not reactive.
+			class="m-0 bg-surestead-green text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl py-6 md:py-8 font-medium text-black rounded break-words">
+			Property management should feel<br class="sm:hidden" /> <span class="border-b border-black border-b-[1px]">responsive, not reactive.</span>
 		</div>
 
 		<!-- Two Columns with Icon -->
 		<div
-			class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 md:py-24 px-4 md:px-30 text-center bg-white">
+			class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 md:py-24 px-4 md:px-30 text-center md:text-left bg-white">
 			<!-- Left column -->
-			<div class="flex items-center justify-center px-4">
-				<p class=" mx-auto text-xl md:text-[2.08rem] font-roboto">
-					Owners deserve consistent service, not last-minute fixes.
-					Residents should feel heard, not handled.
-				</p>
+			<div class="flex items-center justify-center px-0">
+			  <p class="mx-auto text-xl md:text-[2.08rem] font-roboto">
+				Owners deserve consistent service, not last-minute fixes.
+				Residents should feel heard, not handled.
+			  </p>
 			</div>
 
 			<!-- Center icon -->
@@ -54,7 +54,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			</div>
 
 			<!-- Right column -->
-			<div class="flex items-center justify-center px-2">
+			<div class="flex items-center justify-center text-center md:text-left px-2">
 				<p class="mx-auto text-xl md:text-[2.08rem] font-roboto">
 					With over 20 years of experience, we have the tools and
 					commitment to set a higher standard.
@@ -65,15 +65,16 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		<!-- Values Section -->
 <div class="grid grid-cols-1 md:grid-cols-2 w-full">
 	<!-- Left: Heading box -->
-	<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-surestead-lightgray p-8 md:p-40 shadow-inner">
-	  <h2 class="text-5xl md:text-[5.58rem] font-outfit leading-tight text-center md:text-left">
-		Our Values<br />Are Our<br />Foundation
+	<div class="flex items-center justify-center bg-surestead-lightgray p-4 md:p-40 shadow-inner
+						aspect-[4/3] md:aspect-auto h-full">
+			  <h2 class="text-5xl responsive-hero sm:text-6xl md:text-8xl font-outfit font-medium leading-tight text-center md:text-left">
+		Our Values<br />Form Our<br />Foundation
 	  </h2>
 	</div>
   
 	<!-- Right: Paragraph box -->
 	<div class="flex items-center justify-center aspect-[4/3] md:aspect-square bg-surestead-gray p-6 md:p-40">
-	  <p class="text-white text-xl md:text-[2.08rem] font-roboto leading-relaxed max-w-prose px-4 md:px-0">
+		<p class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl text-body-lg font-roboto leading-[1.1] md:leading-relaxed px-4 md:px-0">
 		We've built our service-first approach around financial clarity, personalized support,
 		and modern digital infrastructure. From automated workflows to clear monthly reporting
 		and hands-on problem solving, our process is tailored to earn lasting trust.
@@ -84,30 +85,30 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 
 		<!-- Green Bar -->
 		<div
-			class="m-0 bg-surestead-green text-center text-base sm:text-lg md:text-[2.08rem] py-6 md:py-8 font-medium text-black rounded">
+			class="m-0 bg-surestead-green text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl py-6 md:py-8 font-medium text-black rounded break-words">
 			The customer is our priority.
 		</div>
 
 		<!-- Two Columns with Icon -->
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-2 py-12 md:py-24 px-4 md:px-30 text-center bg-white">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 md:py-24 px-4 md:px-30 text-center md:text-left bg-white">
 			<!-- Left column -->
-			<div class="flex items-center justify-center px-0">
+			<div class="flex items-center justify-center text-center md:text-left px-2">
 			  <p class="mx-auto text-xl md:text-[2.08rem] font-roboto">
-				Thoughtful communication, dependability, and proactive management underpin everything we do, enabling outstanding
+				Thoughtful communication, dependability, and proactive management underpin everything we do.
 			  </p>
 			</div>
 		  
-			<!-- Center logo -->
-			<div class="flex items-center justify-center">
+			<!-- Center icon -->
+			<div class="flex items-center justify-center md:py-0">
 			  <picture>
 				<img src="/SPS_mrk.svg" alt="Surestead Logo Mark" class="h-24 md:h-36 w-auto" />
 			  </picture>
 			</div>
 		  
 			<!-- Right column -->
-			<div class="flex items-center justify-center px-0">
+			<div class="flex items-center justify-center text-center md:text-left px-2">
 			  <p class="mx-auto text-xl md:text-[2.08rem] font-roboto">
-				experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the competition.
+				We enable outstanding experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the competition.
 			  </p>
 			</div>
 		  </div>
@@ -117,7 +118,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<p class="text-3xl md:text-hero-md font-roboto max-w-7xl text-center mx-auto leading-relaxed">
 		  
 			  <!-- Title Line (no break) -->
-			  <span class="block relative font-bold after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-1rem] after:w-[450px] sm:after:w-[500px] md:after:w-[700px] after:h-1 after:bg-[#8dc126] ">THE SURESTEAD PROMISE</span>
+			  <span class="block relative font-bold after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-1rem] after:w-[450px] sm:after:w-[500px] md:after:w-[700px] after:h-[1px] after:bg-[#8dc126] ">THE SURESTEAD PROMISE</span>
 		  
 			  <!-- Subtitle Line (no break, all 3 words stay together) -->
 			  <span class="block font-bold text-2xl mt-8 md:text-subhead">Structure. Reliability. Peace of mind.</span>
