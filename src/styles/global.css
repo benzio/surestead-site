@@ -76,3 +76,30 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
 button:hover {
   background-color: #8dc126;
 }
+
+
+@media (max-width: 1200px) {
+  .responsive-hero {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .text-body-lg {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .text-hero-md {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-body-lg {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  .text-hero-md {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
