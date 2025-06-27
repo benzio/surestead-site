@@ -12,7 +12,7 @@ body {
 h1, h2, h3, h4, h5, h6, .font-outfit {
   font-family: 'Outfit', sans-serif;
   @apply leading-none;
-  @apply tracking-tighter;
+  @apply tracking-normal;
   
 }
 .font-roboto {
@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6, .font-outfit {
   --color-surestead-dark: #606060;
   --color-surestead-gray: #A0A0A0;
   --color-surestead-lightgray: #f1f2f2;
+  --color-surestead-light-green: #C6E093;
 }
 
 /* Custom utility classes */
