@@ -8,25 +8,13 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<source srcset="/AboutNav-6239_SPS_1500.jpg" media="(min-width: 768px)" />
 			<img src="/AboutNav-6239_SPS_1500.jpg" alt="Tappan Zee Bridge at sunset" class="object-cover w-full h-full" loading="eager" />
 		</picture>
-		<div class="relative z-10 flex flex-col w-full h-full text-center pt-8 md:pt-12">
-			<h1 class="text-surestead-green-hover max-w-[400px] sm:max-w-full text-sm md:text-lg font-bold font-outfit drop-shadow-lg mt-4 sm:-mt-4  md:-mt-4 mb-2 font-outfit tracking-normal">
+		<div class="relative z-10 flex flex-col w-full h-full text-center py-2 pt-8 md:pt-12">
+			<h1 class="text-surestead-green-hover  sm:max-w-full text-2xl md:text-3xl font-bold font-outfit drop-shadow-lg mb-0 font-outfit tracking-normal">
 				SURESTEAD PROPERTY SERVICES&nbsp;LLC
 			</h1>
-			<h2 class="text-white max-w-[400px] sm:max-w-full text-2xl md:text-3xl font-bold font-outfit drop-shadow-lg mb-0 font-outfit tracking-normal">
-				Your True All-in-One Partner
-			</h2>
-			<p class="text-white max-w-[350px] sm:max-w-[1000px] mx-auto text-base md:text-xl font-roboto drop-shadow-lg mt-46 sm:mt-84 md:mt-72 md:mb-7 tracking-wider pb-6 md:pb-10">
-				Trust Surestead for property management in Westchester and Rockland, NY. From tenant care and maintenance to accounting,<br class="sm:hidden" /> we handle it all.
+			<p class="text-white max-w-[350px] sm:max-w-[1000px] mx-auto text-base md:text-xl font-roboto drop-shadow-lg mt-64 sm:mt-84 md:mt-72 md:mb-7 tracking-wider pb-6 md:pb-10">
+				Trust Surestead for property management <br class="sm:hidden" /> in Westchester and Rockland, NY.
 			</p>
-			<a 
-              href="/contact" 
-              class="text-white max-w-36 mx-auto px-6 py-3 transition-colors"
-              style="background-color: var(--color-surestead-green-hover);"
-              onmouseover="this.style.color='black';"
-              onmouseout="this.style.color='white';"
-            >
-              Let's Talk
-            </a>
 		</div>
 	</section>
 
@@ -72,7 +60,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		<!-- Two Columns 1 with Icon Owners Deserve -->
 		<div class="grid grid-cols-1 md:grid-cols-3 py-12 pt-4 px-4 md:pl-66 md:pr-20 text-left bg-white pt-8 md:pt-4">
 			<!-- Left column -->
-			<div class="grid place-items-start text-left px-2">
+			<div class="grid place-items-start text-left px-2 pt-8 md:pt-12">
 			  <p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
 				Owners deserve consistent service, not last-minute fixes.
 				Residents should feel heard, not handled.
@@ -80,7 +68,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			</div>
 
 			<!-- Center icon -->
-			<div class="grid place-items-center justify-center sm:justify-start mt-0 sm:-mt-8 pl-0 sm:pl-20 sm:ml-0">
+			<div class="grid place-items-center justify-center sm:justify-start mt-0 sm:-mt-8 pl-0 sm:pl-20 sm:ml-0 pt-8 md:pt-12">
 				<picture>
 					<img
 						src="/SPS_mrk.svg"
@@ -91,7 +79,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			</div>
 
 			<!-- Right column -->
-			<div class="grid place-items-start text-left ml-2 sm:-ml-16 pr-10">
+			<div class="grid place-items-start text-left ml-2 sm:-ml-16 pr-10 pt-8 md:pt-12">
 				<p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
 					With over 20 years of experience, we have the tools and
 					commitment to set a higher standard.
@@ -120,7 +108,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 						aspect-square md:aspect-square h-full overflow-hidden order-first md:order-none">
 				<picture class="absolute inset-0 w-full h-full z-0">
 					<source srcset="/AboutPic2_SPS_750.jpg" media="(min-width: 768px)" />
-					<img src="/AboutPic2_SPS_750.jpg" alt="Property management background" class="object-cover object-right w-full h-full" loading="eager" />
+					<img src="/AboutPic2_SPS_750 (1).jpg" alt="Property management background" class="object-cover object-right w-full h-full" loading="eager" />
 				</picture>
 				<h2 class="relative z-10 text-2xl responsive-hero sm:text-3xl md:text-8xl font-outfit leading-tight text-center text-left md:text-left text-white">
 					Our Values<br />Define Our<br />Foundation
@@ -136,11 +124,14 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		</div>
 
 		<!-- Two Columns 2 with Icon Thoughtful -->
-		<div class="grid grid-cols-1 md:grid-cols-3 py-12 px-4 md:pl-66 md:pr-20 text-left bg-white">
+		<div class="grid grid-cols-1 md:grid-cols-3 py-12 px-4 md:pl-66 md:pr-20 text-left bg-white place-items-center md:place-items-start">
 			<!-- Left column -->
-			<div class="grid place-items-start text-left px-2">
+			<div class="grid place-items-center md:place-items-start text-left px-2">
 			  <p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
-				Thoughtful communication, dependability, and proactive management underpin<br> everything we do.
+				Thoughtful communication,<br />
+				dependability, and proactive<br />
+				management guide our support for<br />
+				owners, residents, and HOA boards.
 			  </p>
 			</div>
 		  
@@ -156,9 +147,12 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			</div>
 		  
 			<!-- Right column -->
-			<div class="grid place-items-start text-left ml-0 sm:-ml-16 pr-10">
+			<div class="grid place-items-center md:place-items-start text-left ml-0 sm:-ml-16 pr-0 sm:pr-10">
 				<p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
-				We enable outstanding experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the competition.
+				We take pride in delivering<br />
+				outstanding service to every client.<br />
+				Your trust and long-term satisfaction<br />
+				keep us ahead of the competition.
 			  </p>
 			</div>
 		  </div>
@@ -179,40 +173,29 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			  </div>
 			  
 			  <!-- Feature Grid -->
-			  <div class="grid grid-cols-1 md:grid-cols-3">
+			  <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[1.5px] divide-surestead-light-green">
 				<!-- Structure -->
-				<div class="bg-[#707070] p-6 md:p-8 text-center aspect-[4/3] flex flex-col justify-center items-center md:justify-start border-r border-surestead-green-hover">
+				<div class="bg-[#707070] p-6 md:p-8 text-center aspect-[4/3] flex flex-col justify-center items-center">
 				  <h3 class="text-3xl md:text-4xl font-outfit font-bold mb-4 text-center" style="color: var(--color-surestead-light-green);">
 					Structure
 				  </h3>
-				  <div class="w-16 h-px bg-white mx-auto mb-6"></div>
-				  <p class="text-lg md:text-xl font-roboto text-white leading-relaxed text-center">
-					Organized back office systems and clear front office processes that keep everything running smoothly and efficiently.
-				  </p>
+				  
 				</div>
 		  
 				<!-- Reliability -->
-				<div class="bg-[#707070] p-6 md:p-8 text-center aspect-[4/3] flex flex-col justify-center items-center md:justify-start border-r border-surestead-green-hover">
+				<div class="bg-[#707070] p-6 md:p-8 text-center aspect-[4/3] flex flex-col justify-center items-center">
 				  <h3 class="text-3xl md:text-4xl font-outfit font-bold mb-4 text-center" style="color: var(--color-surestead-light-green);">
 					Reliability
 				  </h3>
-				  <div class="w-16 h-px bg-white mx-auto mb-6"></div>
-				  <p class="text-lg md:text-xl font-roboto text-white leading-relaxed text-center">
-					Consistent, dependable service<br />
-					from both our front office team<br />
-					and back office operations.
-				  </p>
+				 
 				</div>
 				
 				<!-- Peace of Mind -->
-				<div class="bg-[#707070] p-6 md:p-8 text-center aspect-[4/3] flex flex-col justify-center items-center md:justify-start">
+				<div class="bg-[#707070] p-6 md:p-8 text-center aspect-[4/3] flex flex-col justify-center items-center">
 				  <h3 class="text-3xl md:text-4xl font-outfit font-bold mb-4 text-center" style="color: var(--color-surestead-light-green);">
 					Peace of Mind
 				  </h3>
-				  <div class="w-16 h-px bg-white mx-auto mb-6"></div>
-				  <p class="text-lg md:text-xl font-roboto text-white leading-relaxed text-center">
-					Knowing your properties are managed by experts who excel at both customer service and operational excellence.
-				  </p>
+				  
 				</div>
 			  </div>
 			</div>
@@ -230,7 +213,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<!-- Button -->
 	
 	<a href="/contact"
-   class="bg-surestead-green-hover hover:bg-surestead-green-hover text-white px-6 md:px-10 h-20 sm:h-[120px] font-bold transition rounded-lg flex items-center justify-center gap-4"
+   class="bg-surestead-green-hover hover:bg-surestead-green-hover text-white px-6 md:px-10 h-14 sm:h-18  font-bold transition flex items-center justify-center gap-4"
    style="background-color: var(--color-surestead-green-hover);">
   <span class="text-xl lg:text-[2.08rem] leading-none">Let's become trusted partners</span>
   <!-- Insert your chosen SVG here -->
