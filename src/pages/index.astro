@@ -3,17 +3,17 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 ---
 
 <BaseLayout>
-	<section class="relative w-full h-[320px] md:h-[360px] lg:h-[500px] flex items-center justify-center overflow-hidden">
+	<section class="relative w-full h-[450px] md:h-[360px] lg:h-[500px] flex items-center justify-center overflow-hidden">
 		<picture class="absolute inset-0 w-full h-full z-0">
 			<source srcset="/AboutNav-6239_SPS_1500.jpg" media="(min-width: 768px)" />
 			<img src="/AboutNav-6239_SPS_1500.jpg" alt="Tappan Zee Bridge at sunset" class="object-cover w-full h-full" loading="eager" />
 		</picture>
 		<div class="relative z-10 flex flex-col w-full h-full text-center pt-8 md:pt-12">
-			<h1 class="text-surestead-green-hover text-2xl md:text-3xl font-bold font-outfit drop-shadow-lg -mt-4 mb-0 font-outfit tracking-normal">
-				SURESTEAD PROPERTY SERVICES LLC
+			<h1 class="text-surestead-green-hover max-w-[400px] sm:max-w-full text-2xl md:text-3xl font-bold font-outfit drop-shadow-lg mt-4 sm:-mt-4  md:-mt-4 mb-0 font-outfit tracking-normal">
+				SURESTEAD PROPERTY SERVICES&nbsp;LLC
 			</h1>
-			<p class="text-white text-base md:text-xl font-roboto drop-shadow-lg mt-72 md:mb-7 tracking-wider pb-6 md:pb-10 mt-0">
-				Your trusted property management partner in <span class="whitespace-nowrap">Westchester and Rockland, New York</span>
+			<p class="text-white text-base md:text-xl font-roboto drop-shadow-lg mt-56 sm:mt-72 md:mt-72 md:mb-7 tracking-wider pb-6 md:pb-10">
+				Your trusted property management partner in Westchester and Rockland, New York
 			</p>
 		</div>
 	</section>
@@ -58,11 +58,11 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 		</div>
 
 		<!-- Two Columns with Icon Owners Deserve -->
-		<div class="grid grid-cols-1 md:grid-cols-3 py-12 px-4 md:pl-66 md:pr-20 text-left bg-white">
+		<div class="grid grid-cols-1 md:grid-cols-3 py-12 pt-4 px-4 md:pl-66 md:pr-20 text-left bg-white">
 			<!-- Left column -->
 			<div class="grid place-items-start text-left px-2">
 			  <p class="mx-0 text-xl md:text-[2rem] font-roboto">
-				Owners deserve consistent service, not <span class="whitespace-nowrap">last-minute fixes.</span>
+				Owners deserve consistent service, not last-minute fixes.
 				Residents should feel heard, not handled.
 			  </p>
 			</div>
@@ -82,7 +82,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<div class="grid place-items-start text-left -ml-16 pr-10">
 				<p class="mx-0 text-xl md:text-[2rem] font-roboto">
 					With over 20 years of experience, we have the tools and
-					commitment to set a <span class="whitespace-nowrap">higher standard.</span>
+					commitment to set a higher standard.
 				</p>
 			</div>
 		</div>
@@ -99,7 +99,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 					infrastructure. From automated<br />
 					workflows to clear monthly reporting and<br />
 					hands-on problem solving, our process is<br />
-					tailored to earn <span class="whitespace-nowrap">lasting trust.</span>
+					tailored to earn lasting trust.
 				</p>
 			</div>
 			
@@ -146,7 +146,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<!-- Right column -->
 			<div class="grid place-items-start text-left -ml-16 pr-10">
 				<p class="mx-0 text-xl md:text-[2rem] font-roboto">
-				We enable outstanding experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the <span class="whitespace-nowrap">competition.</span>
+				We enable outstanding experiences for tenants, owners, and HOA boards alike. Your trust and long-term satisfaction keep us ahead of the competition.
 			  </p>
 			</div>
 		  </div>
@@ -161,7 +161,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 				  THE SURESTEAD DIFFERENCE
 				</h2>
 				<p class="text-xl md:text-2xl font-roboto text-gray">
-				  With Surestead, your properties are well-maintained, and <span class="whitespace-nowrap">stress-free.</span>
+				  With Surestead, your properties are well-maintained, and stress-free.
 				</p>
 			  </div>
 			  
@@ -174,7 +174,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 				  </h3>
 				  <div class="w-16 h-px bg-white mx-auto mb-6"></div>
 				  <p class="text-lg md:text-xl font-roboto text-white leading-relaxed text-center">
-					Organized systems and clear processes that keep everything running smoothly and <span class="whitespace-nowrap">efficiently.</span>
+					Organized systems and clear processes that keep everything running smoothly and efficiently.
 				  </p>
 				</div>
 		  
@@ -187,7 +187,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 				  <p class="text-lg md:text-xl font-roboto text-white leading-relaxed text-center">
 					Consistent, dependable service<br />
 					you can count on, day in<br />
-					and <span class="whitespace-nowrap">day out.</span>
+					and day out.
 				  </p>
 				</div>
 				
@@ -198,7 +198,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 				  </h3>
 				  <div class="w-16 h-px bg-white mx-auto mb-6"></div>
 				  <p class="text-lg md:text-xl font-roboto text-white leading-relaxed text-center">
-					Knowing your properties are in expert hands, allowing you to focus on what matters <span class="whitespace-nowrap">most.</span>
+					Knowing your properties are in expert hands, allowing you to focus on what matters most.
 				  </p>
 				</div>
 			  </div>
@@ -217,11 +217,12 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<!-- Button -->
 	<a
 	  href="/contact"
-	  class="bg-surestead-green-hover hover:bg-surestead-green-hover text-white px-6 md:px-10 h-[100px] sm:h-[100px] md:h-[120px] btn-h-140  btn-h-100 font-bold hover:bg-green-200 hover:text-black transition"
+	  class="bg-surestead-green-hover hover:bg-surestead-green-hover text-white px-6 md:px-10 h-[120px] font-bold hover:bg-green-200 hover:text-black transition rounded-lg inline-block"
+	  style="background-color: var(--color-surestead-green-hover);"
 	>
 	  <div class="flex items-center justify-center h-full gap-2">
-	    <span class="text-xl md:text-3xl lg:text-[2.08rem]">Let's become trusted partners</span>
-	    <span class="text-xl -mt-6 md:text-[7.08rem]">»</span>
+	    <span class="text-3xl lg:text-[2.08rem]">Let's become trusted partners</span>
+	    <span class="text-[7.08rem]">»</span>
 	  </div>
 	</a>
 	<div class="text-center text-white mt-3 px-4">

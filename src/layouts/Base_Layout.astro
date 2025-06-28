@@ -96,7 +96,15 @@ import "../styles/global.css";
         <nav class="flex flex-col space-y-10 text-2xl text-center font-bold uppercase">
           <a href="/" class="hover:text-surestead-green">About Us</a>
           <a href="/services" class="hover:text-surestead-green">Our Services</a>
-          <a href="/contact" class="hover:text-surestead-green">Let's Talk</a>
+          <a 
+              href="/contact" 
+              class="text-white px-6 py-3 transition-colors"
+              style="background-color: var(--color-surestead-green-hover);"
+              onmouseover="this.style.color='black';"
+              onmouseout="this.style.color='white';"
+            >
+              Let's Talk
+            </a>
         </nav>
       </div>
 
