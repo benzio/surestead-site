@@ -21,20 +21,28 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 <div class="grid grid-rows-1 grid-cols-1 gap-0">
 	<!-- Row 1 -->
 	<div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-0">
-	  <div class="col-start-1 col-end-2 row-start-1 row-end-2 flex items-center justify-center aspect-square bg-black">
-		<div class="w-1/2 h-1/2 bg-gray-200">
-			Raising the<br />Standard<br />in Property<br />Management
+	  <div class="col-start-1 col-end-2 row-start-1 row-end-2 flex items-center justify-center aspect-square bg-black relative overflow-hidden pl-0 lg:pl-12">
+		<picture class="absolute inset-0 w-full h-full z-0">
+			<source srcset="/AboutPic1_SPS_750.jpg" media="(min-width: 768px)" />
+			<img src="/AboutPic1_SPS_750.jpg" alt="Property management background" class="object-cover object-right w-full h-full" loading="eager" />
+		</picture>
+		<div class="relative flex items-center z-10 w-2/3 h-2/3 justify-center md:justify-start">
+			<h2 class="text-2xl sm:text-5xl md:text-5xl lg:text-[5rem] [@media(min-width:1024px)_and_(max-width:1200px)]:text-[3.5rem] font-outfit leading-tight text-center text-left md:text-left text-white">
+				Raising the<br />Standard<br />in Property<br />Management
+			</h2>
 		</div>
 	  </div>
-	  <div class="col-start-1 md:col-start-2 col-end-2 md:col-end-3 row-start-2 md:row-start-1 row-end-3 md:row-end-2 flex items-center justify-center aspect-square bg-gray-800">
-		<div class="w-1/2 h-1/2 bg-gray-200">
-			Anyone who interacts with property<br />
-			management firms knows there is room<br />
-			for improvement. Many owners are<br />
-			underserved on critical fronts like<br />
-			communication, financial transparency,<br />
-			and property maintenance, creating<br />
-			frustration and eroding trust.
+	  <div class="col-start-1 md:col-start-2 col-end-2 md:col-end-3 row-start-2 md:row-start-1 row-end-3 md:row-end-2 flex items-center justify-center aspect-square bg-surestead-light-green ">
+		<div class="w-2/3 h-2/3 flex items-center justify-center md:justify-start ml-0 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0 lg:ml-30">
+			<p class="text-gray-600 text-xl sm:text-xl md:text-lg lg:text-2xl font-roboto leading-normal md:leading-10 px-2 md:px-0 py-4 text-center md:text-left">
+				Anyone who interacts with property<br />
+				management firms knows there is room<br />
+				for improvement. Many owners are<br />
+				underserved on critical fronts like<br />
+				communication, financial transparency,<br />
+				and property maintenance, creating<br />
+				frustration and eroding trust.
+			  </p>
 		</div>
 	  </div>
 	</div>
@@ -51,16 +59,20 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<!-- End Row 2 -->
 	<!-- Row 3 -->
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-96 md:min-h-64 relative">
-	  <div class="flex items-center justify-center bg-gray-600">
-		<div class="w-1/2 h-1/2 bg-gray-200">
-			Owners deserve consistent service, not last-minute fixes.
-			Residents should feel heard, not handled.
+	  <div class="flex items-center justify-center pl-0 lg:pl-12">
+		<div class="w-2/3 h-2/3 [@media(min-width:1201px)_and_(max-width:1334px)]:pr-0 pr-12">
+			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
+				Owners deserve consistent service, not last-minute fixes.
+				Residents should feel heard, not handled.
+			  </p>
 		</div>
 	  </div>
-	  <div class="flex items-center justify-center bg-gray-200">
-		<div class="w-1/2 h-1/2 bg-gray-600">
-			With over 20 years of experience, we have the tools and
-			commitment to set a higher standard.
+	  <div class="flex items-center justify-center">
+		<div class="w-2/3 h-2/3 pr-12 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0 lg:ml-30">
+			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
+				With over 20 years of experience, we have the tools and
+				commitment to set a higher standard.
+			</p>
 		</div>
 	  </div>
 	  <!-- Centered Icon Overlay -->
@@ -69,7 +81,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<img
 				src="/SPS_mrk.svg"
 				alt="Surestead Logo Mark"
-				class="h-30 md:h-56 w-auto"
+				class="h-30 md:h-40 [@media(min-width:1024px)_and_(max-width:1200px)]:h-44 lg:h-56 w-auto"
 			/>
 		</picture>
 	  </div>
@@ -78,161 +90,83 @@ import BaseLayout from "../layouts/Base_Layout.astro";
   </div>
   <!-- End Grid Example -->
 
-	<!--Raising the Standard in Property Management -->
-	<section class="bg-white mx-auto my-0 font-sans overflow-x-hidden">
-		<!-- Hero Section -->
-		<div class="grid grid-cols-1 md:grid-cols-2 w-full">
-			<!-- Left -->
-			<div class="relative grid place-items-center bg-surestead-lightgray py-4 md:py-36 px-4 md:px-20 shadow-inner
-						aspect-square md:aspect-square h-full overflow-hidden">
-				<picture class="absolute inset-0 w-full h-full z-0">
-					<source srcset="/AboutPic1_SPS_750.jpg" media="(min-width: 768px)" />
-					<img src="/AboutPic1_SPS_750.jpg" alt="Property management background" class="object-cover object-right w-full h-full" loading="eager" />
-				</picture>
-				<h2 class="relative z-10 text-2xl responsive-hero sm:text-3xl md:text-6xl lg:text-7xl font-outfit leading-tight text-center text-left md:text-left text-white">
-					Raising the<br />Standard<br />in Property<br />Management
-				</h2>
-			</div>
-		  
-			<!-- Right -->
-			<div class="grid place-items-center bg-surestead-light-green p-4 md:p-8 lg:p-12
-						aspect-square md:aspect-square md:h-full">
-			  <p class="text-gray-600 text-base sm:text-base md:text-lg lg:text-2xl font-roboto leading-normal  md:leading-10 px-2 md:px-4 py-4">
-				Anyone who interacts with property<br />
-				management firms knows there is room<br />
-				for improvement. Many owners are<br />
-				underserved on critical fronts like<br />
-				communication, financial transparency,<br />
-				and property maintenance, creating<br />
-				frustration and eroding trust.
-			  </p>
-			</div>
-		  </div>
-		  
-		  
-
-		<!-- Gray Bar 1-->
-		<div
-			class="m-0 bg-[#707070] text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8 font-bold text-white break-words">
-			Property management should feel<br class="sm:hidden" /> responsive, not reactive.
-		</div>
-
-		<!-- Three Columns w/Icon 1 Owners Deserve -->
-<div class="container mx-auto p-4 md:p-6 lg:p-8 flex flex-wrap justify-center">
-	<div class="w-full text-xl md:text-2xl lg:text-3xl font-roboto md:w-1/3 lg:w-1/3 xl:w-1/3 p-2 md:p-4 lg:p-6 leading-8 md:leading-10 lg:leading-12 self-start">Owners deserve consistent service, not last-minute fixes.
-	  Residents should feel heard, not handled.</div>
-	<div class="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 p-4 md:p-6 lg:p-8 flex justify-center items-center">
-	  <picture>
-		<img
-		  src="/SPS_mrk.svg"
-		  alt="Surestead Logo Mark"
-		  class="h-30 md:h-56 w-auto"
-		/>
-	  </picture>
-	</div>
-	<div class="w-full font-roboto text-xl md:text-2xl lg:text-3xl md:w-1/3 lg:w-1/3 xl:w-1/3 p-4 md:p-6 lg:p-6 leading-8 md:leading-10 lg:leading-12 self-start">With over 20 years of experience, we have the tools and
-	  commitment to set a higher standard.</div>
-  </div>
-
-		<!-- Two Columns 1 with Icon Owners Deserve -->
-		<div class="oldgrid grid grid-cols-1 md:grid-cols-3 py-12 pt-4 px-4 md:pl-66 md:pr-20 text-left bg-white pt-8 md:pt-4">
-			<!-- Left column -->
-			<div class="grid place-items-start text-left px-2 pt-8 md:pt-12">
-			  <p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
-				Owners deserve consistent service, not last-minute fixes.
-				Residents should feel heard, not handled.
-			  </p>
-			</div>
-
-			<!-- Center icon -->
-			<div class="grid place-items-center justify-center sm:justify-start mt-0 sm:-mt-8 pl-0 sm:pl-20 sm:ml-0 pt-8 md:pt-12">
-				<picture>
-					<img
-						src="/SPS_mrk.svg"
-						alt="Surestead Logo Mark"
-						class="h-30 md:h-56 w-auto"
-					/>
-				</picture>
-			</div>
-
-			<!-- Right column -->
-			<div class="grid place-items-start text-left ml-2 sm:-ml-16 pr-10 pt-8 md:pt-12">
-				<p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
-					With over 20 years of experience, we have the tools and
-					commitment to set a higher standard.
-				</p>
-			</div>
-		</div>
-
-		<!-- Values Section -->
-		<div class="grid grid-cols-1 md:grid-cols-2 w-full">
-			<!-- Left: Paragraph box -->
-			<div class="grid place-items-center bg-surestead-light-green p-4 md:p-8 lg:p-12
-						aspect-square md:aspect-square md:h-full order-last md:order-none">
-						<p class="text-gray-600 text-base sm:text-base md:text-lg lg:text-2xl font-roboto leading-relaxed  md:leading-12 px-2 md:px-4 py-4">
-					We've built our service-first approach<br />
+  <!-- Grid Example 2 -->
+<div class="grid grid-rows-1 grid-cols-1 gap-0">
+	<!-- Row 1 -->
+	<div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-0">	  
+	  <div class="col-start-1 col-end-2 row-start-2 md:row-start-1 row-end-3 md:row-end-2 flex items-center justify-center aspect-square bg-surestead-light-green ">
+		<div class="w-2/3 h-2/3 flex items-center justify-center md:justify-start ml-0 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0 lg:ml-24">
+			<p class="text-gray-600 text-xl sm:text-xl md:text-lg lg:text-2xl font-roboto leading-normal md:leading-10 px-2 md:px-0 py-4 text-center md:text-left">
+				We've built our service-first approach<br />
 					around financial clarity, personalized<br />
 					support, and modern digital<br />
 					infrastructure. From automated<br />
 					workflows to clear monthly reporting and<br />
 					hands-on problem solving, our process is<br />
 					tailored to earn lasting trust.
-				</p>
-			</div>
-			
-			<!-- Right: Heading box with background image -->
-			<div class="relative grid place-items-center bg-surestead-lightgray py-4 md:py-36 px-4 md:px-20 shadow-inner
-						aspect-square md:aspect-square h-full overflow-hidden order-first md:order-none">
-				<picture class="absolute inset-0 w-full h-full z-0">
-					<source srcset="/AboutPic2_SPS_750.jpg" media="(min-width: 768px)" />
-					<img src="/AboutPic2_SPS_750 (1).jpg" alt="Property management background" class="object-cover object-right w-full h-full" loading="eager" />
-				</picture>
-				<h2 class="relative z-10 text-2xl responsive-hero sm:text-3xl md:text-8xl font-outfit leading-tight text-center text-left md:text-left text-white">
-					Our Values<br />Define Our<br />Foundation
-				</h2>
-			</div>
+			  </p>
 		</div>
-  
-
-		<!-- Gray Bar 2-->
+	  </div>
+	  <div class="col-start-1 md:col-start-2 col-end-2 md:col-end-3 row-start-1 row-end-2 flex items-center justify-center aspect-square bg-black relative overflow-hidden pl-0 lg:pl-12">
+		<picture class="absolute inset-0 w-full h-full z-0">
+			<source srcset="/AboutPic2_SPS_750 (1).jpg" media="(min-width: 768px)" />
+			<img src="/AboutPic2_SPS_750 (1).jpg" alt="Property management background" class="object-cover object-right w-full h-full" loading="eager" />
+		</picture>
+		<div class="relative flex items-center z-10 w-2/3 h-2/3 justify-center md:justify-start">
+			<h2 class="text-2xl sm:text-5xl md:text-5xl lg:text-[5rem] [@media(min-width:1024px)_and_(max-width:1200px)]:text-[3.5rem] font-outfit leading-tight text-center text-left md:text-left text-white">
+				Our Values<br />Define Our<br />Foundation
+			</h2>
+		</div>
+	  </div>
+	</div>
+	<!-- End Row 1 -->
+	<!-- Row 2 -->
+	<div class="grid grid-cols-1 gap-0 h-24 bg-[#707070]">
+	  <div class="flex items-center mx-auto justify-center">
 		<div
-			class="m-0 bg-[#707070] text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8 font-bold text-white break-words">
-			The customer is our priority.
+			class="m-0 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8 font-bold text-white break-words">
+			Property management should feel<br class="sm:hidden" /> responsive, not reactive.
 		</div>
-
-		<!-- Two Columns 2 with Icon Thoughtful -->
-		<div class="grid grid-cols-1 md:grid-cols-3 py-12 px-4 md:pl-66 md:pr-20 text-left bg-white place-items-center md:place-items-start">
-			<!-- Left column -->
-			<div class="grid place-items-center md:place-items-start text-left px-2">
-			  <p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
-				Thoughtful communication,<br />
-				dependability, and proactive<br />
-				management guide our support for<br />
-				owners, residents, and HOA boards.
+	  </div>
+	</div>
+	<!-- End Row 2 -->
+	<!-- Row 3 -->
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-96 md:min-h-64 [@media(min-width:1024px)_and_(max-width:1200px)]:min-h-90  [@media(min-width:1333px)_and_(max-width:1355px)]:min-h-96 lg:min-h-84 relative">
+	  <div class="flex items-center justify-center pl-0 lg:pl-12">
+		<div class="w-2/3 h-2/3 [@media(min-width:1201px)_and_(max-width:1334px)]:pr-0 pr-12">
+			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
+				Thoughtful communication,
+dependability, and proactive
+management guide our support for
+owners, residents, and HOA boards.
 			  </p>
-			</div>
-		  
-			<!-- Center icon -->
-			<div class="grid place-items-center justify-center sm:justify-start mt-0 sm:-mt-8 pl-0 sm:pl-20 sm:ml-0">
-				<picture>
-					<img
-						src="/SPS_mrk.svg"
-						alt="Surestead Logo Mark"
-						class="h-30 md:h-56 w-auto"
-					/>
-				</picture>
-			</div>
-		  
-			<!-- Right column -->
-			<div class="grid place-items-center md:place-items-start text-left ml-0 sm:-ml-16 pr-0 sm:pr-10">
-				<p class="mx-0 text-xl md:text-[2rem] font-roboto text-center md:text-left">
-				We take pride in delivering<br />
-				outstanding service to every client.<br />
-				Your trust and long-term satisfaction<br />
-				keep us ahead of the competition.
-			  </p>
-			</div>
-		  </div>
+		</div>
+	  </div>
+	  <div class="flex items-center justify-center">
+		<div class="w-2/3 h-2/3 pr-12 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0 lg:ml-30">
+			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
+				We take pride in delivering
+outstanding service to every client.
+Your trust and long-term satisfaction
+keep us ahead of the competition.
+			</p>
+		</div>
+	  </div>
+	  <!-- Centered Icon Overlay -->
+	  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-10">
+		<picture>
+			<img
+				src="/SPS_mrk.svg"
+				alt="Surestead Logo Mark"
+				class="h-30 md:h-40 [@media(min-width:1024px)_and_(max-width:1200px)]:h-44 lg:h-56 w-auto"
+			/>
+		</picture>
+	  </div>
+	</div>
+	<!-- End Row 3 -->
+  </div>
+  <!-- End Grid Example 2 -->
+		
 		  
 		  <!--The Surestead Difference -->
 	
