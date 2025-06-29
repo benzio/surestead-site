@@ -3,16 +3,17 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 ---
 
 <BaseLayout>
-	<section class="relative w-full  flex items-center justify-center overflow-hidden">
+	<section class="relative w-full flex items-center justify-center overflow-hidden">
 		<picture class="absolute inset-0 w-full h-full z-0">
 			<source srcset="/AboutNav-6239_SPS_1500.jpg" media="(min-width: 768px)" />
-			<img src="/AboutNav-6239_SPS_1500.jpg" alt="Tappan Zee Bridge at sunset" class="object-cover w-full h-full" loading="eager" width="1500" height="1000" />
+			<img src="/AboutNav-6239_SPS_1500.jpg" alt="Tappan Zee Bridge at sunset" class="object-cover object-[center_40%] w-full h-full" loading="eager" width="1500" height="1000" />
 		</picture>
-		<div class="relative z-10 flex flex-col w-full h-full text-center py-8 pt-4 md:pt-6">
-			<h1 class="text-surestead-green-hover sm:max-w-full text-2xl md:text-3xl font-bold font-outfit drop-shadow-lg mb-0 font-outfit tracking-normal">
+		<div class="relative z-10 flex flex-col w-full h-full text-center py-14 pt-10 md:pt-20">
+			<h1 class="text-surestead-green-hover sm:max-w-full text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-[2.75rem] font-bold font-outfit drop-shadow-lg mb-0 font-outfit tracking-normal">
 				SURESTEAD PROPERTY SERVICES&nbsp;LLC
 			</h1>
-			<p class="text-white max-w-[350px] sm:max-w-[1000px] mx-auto text-base md:text-xl font-roboto drop-shadow-lg mt-64 md:mt-48 lg:mt-72 lg:mb-7 tracking-wider pb-4 md:pb-6">
+			
+			<p class="text-white max-w-[350px] sm:max-w-[1000px] mx-auto text-base text-center text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto drop-shadow-lg mt-64 md:mt-48 lg:mt-100 tracking-wider pb-4 md:pb-6">
 				Your trusted partner <br class="sm:hidden" /> in Westchester and Rockland, New York
 			</p>
 		</div>
@@ -35,7 +36,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	  <div class="col-start-1 md:col-start-2 col-end-2 md:col-end-3 row-start-2 md:row-start-1 row-end-3 md:row-end-2 flex items-center justify-center aspect-square bg-surestead-light-green">
 		<div class="w-4/5 h-4/5 sm:w-3/5 sm:h-3/5 flex items-center justify-center">
 			<p class="text-gray-600 text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto leading-relaxed px-2 md:px-0 py-4">
-				Anyone who interacts with property management firms knows there is room for improvement. Many owners are underserved on critical fronts like communication, financial transparency, and property maintenance, creating frustration and eroding trust.
+				Anyone who interacts with property management firms knows there is room for improvement. Many owners are underserved on critical fronts like communication, financial transparency, and property maintenance, creating frustration and <span style="white-space: nowrap;">eroding trust.</span>
 			  </p>
 		</div>
 	  </div>
@@ -45,32 +46,30 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<div class="grid grid-cols-1 gap-0 h-24 bg-[#707070]">
 	  <div class="flex items-center mx-auto justify-center">
 		<div
-			class="m-0 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8  text-white break-words">
-			Property management should feel<br class="sm:hidden" /> responsive, not reactive.
+			class="m-0 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8 text-white break-words whitespace-nowrap">
+			The customer is our priority.
 		</div>
 	  </div>
 	</div>
 	<!-- End Row 2 -->
 	<!-- Row 3 -->
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-96 md:min-h-64 relative">
-	  <div class="flex items-center justify-center pl-0">
-		<div class="w-2/3 h-2/3 [@media(min-width:1201px)_and_(max-width:1334px)]:pr-0 pr-12">
-			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
-				Owners deserve consistent service, not last-minute fixes.
-				Residents should feel heard, not handled.
-			  </p>
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[40rem] md:min-h-96 relative">
+	  <div class="flex items-center justify-center p-4">
+		<div class="w-full max-w-md md:w-2/3 md:max-w-none flex items-center justify-center">
+			<p class="text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem] [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto text-center leading-relaxed">
+				Owners deserve consistent service, not last-minute fixes. Residents should feel <span style="white-space: nowrap;">heard, not handled.</span>
+			</p>
 		</div>
 	  </div>
-	  <div class="flex items-center justify-center">
-		<div class="w-2/3 h-2/3 pr-12 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0 lg:ml-30">
-			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
-				With over 20 years of experience, we have the tools and
-				commitment to set a higher standard.
+	  <div class="flex items-center justify-center p-4">
+		<div class="w-full max-w-md md:w-2/3 md:max-w-none flex items-center justify-center">
+			<p class="text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem] [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto text-center leading-relaxed">
+				With over 20 years of experience, we have the tools and commitment to set a higher standard.
 			</p>
 		</div>
 	  </div>
 	  <!-- Centered Icon Overlay -->
-	  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-10">
+	  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -mt-4 flex items-center justify-center z-10">
 		<picture>
 			<img
 				src="/SPS_mrk_fav_notext.svg"
@@ -91,8 +90,8 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<!-- Row 1 -->
 	<div class="grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-0">	  
 	  <div class="col-start-1 col-end-2 row-start-2 md:row-start-1 row-end-3 md:row-end-2 flex items-center justify-center aspect-square bg-surestead-light-green ">
-		<div class="w-2/3 h-2/3 flex items-center justify-center md:justify-start ml-0 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0">
-			<p class="text-gray-600 text-lg xs:text-lg sm:text-xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-2xl lg:text-3xl lead-relaxed md:text-left">
+		<div class="w-4/5 h-4/5 sm:w-3/5 sm:h-3/5 flex items-center justify-center md:justify-start ml-0 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0">
+			<p class="text-gray-600 text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem] [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto leading-relaxed  md:text-left">
 				We've built our service-first approach around financial clarity, personalized support, and modern digital infrastructure. From automated workflows to clear monthly reporting and hands-on problem solving, our process is tailored to earn lasting trust.
 			  </p>
 		</div>
@@ -114,17 +113,17 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 	<div class="grid grid-cols-1 gap-0 h-24 bg-[#707070]">
 	  <div class="flex items-center mx-auto justify-center">
 		<div
-			class="m-0 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8 text-white break-words">
-			Property management should feel<br class="sm:hidden" /> responsive, not reactive.
+			class="m-0 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl py-6 md:py-8 text-white break-words whitespace-nowrap">
+			The customer is our priority.
 		</div>
 	  </div>
 	</div>
 	<!-- End Row 2 -->
 	<!-- Row 3 -->
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-96 md:min-h-64 [@media(min-width:1024px)_and_(max-width:1200px)]:min-h-90  [@media(min-width:1333px)_and_(max-width:1355px)]:min-h-96 lg:min-h-84 relative">
-	  <div class="flex items-center justify-center pl-0">
-		<div class="w-2/3 h-2/3 [@media(min-width:1201px)_and_(max-width:1334px)]:pr-0 pr-12">
-			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center  md:text-left">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[40rem] md:min-h-96 relative">
+		<div class="flex items-center justify-center p-4">
+			<div class="w-full max-w-md md:w-2/3 md:max-w-none flex items-center justify-center">
+				<p class="text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem] [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto text-center leading-relaxed">
 				Thoughtful communication,
 dependability, and proactive
 management guide our support for
@@ -132,9 +131,9 @@ owners, residents, and HOA boards.
 			  </p>
 		</div>
 	  </div>
-	  <div class="flex items-center justify-center">
-		<div class="w-2/3 h-2/3 pr-12 [@media(min-width:1024px)_and_(max-width:1200px)]:ml-0 lg:ml-30">
-			<p class="mx-0 text-xl [@media(min-width:1024px)_and_(max-width:1200px)]:text-3xl lg:text-[2rem] font-roboto text-center md:text-left">
+	  <div class="flex items-center justify-center p-4">
+		<div class="w-full max-w-md md:w-2/3 md:max-w-none flex items-center justify-center">
+			<p class="text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem] [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-3xl font-roboto text-center leading-relaxed">
 				We take pride in delivering
 outstanding service to every client.
 Your trust and long-term satisfaction
@@ -143,7 +142,7 @@ keep us ahead of the competition.
 		</div>
 	  </div>
 	  <!-- Centered Icon Overlay -->
-	  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-10">
+	  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -mt-4 flex items-center justify-center z-10">
 		<picture>
 			<img
 				src="/SPS_mrk_fav_notext.svg"
