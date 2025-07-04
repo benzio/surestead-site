@@ -84,6 +84,11 @@ button:hover {
   background-color: #8dc126;
 }
 
+/* Override for accordion buttons to prevent hover background */
+.accordion-button:hover {
+  background-color: transparent !important;
+}
+
 .custom-purple {
   background-color: #800080; /* Dark purple */
 }
