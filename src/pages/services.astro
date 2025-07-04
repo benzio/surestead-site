@@ -3,15 +3,15 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 ---
 
 <BaseLayout>
-	<section class="relative w-full flex items-center justify-center min-h-[500px] overflow-hidden">
+	<section class="relative w-full flex items-center justify-center min-h-[700px] overflow-hidden">
 		<picture class="absolute inset-0 w-full h-full z-0">
 			<source srcset="/services/ServicesNav-6188_SPS_1500.jpg" media="(min-width: 768px)" />
 			<img src="/services/ServicesNav-6188_SPS_1500.jpg" alt="Lighthouse" class="object-cover object-[center_70%] w-full h-full" loading="eager" width="1500" height="1000" />
 		</picture>
 		<div class="relative z-10 flex flex-col w-full h-full text-center py-14 -mt-30 md:pt-20">
 			<h1 class="text-surestead-dark
-             sm:max-w-full text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-[2.75rem] font-bold font-outfit drop-shadow-lg mb-0 font-outfit tracking-normal">
-				The Surestead Difference
+             sm:max-w-full text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-[2.75rem] font-bold font-outfit drop-shadow-lg mb-0 font-outfit text-uppercase  tracking-normal">
+				THE SURESTEAD DIFFERENCE
 			</h1>
 		</div>
 	</section>
@@ -195,129 +195,139 @@ that shape every interaction.
     <!-- Accordion -->
 
     <section class="bg-surestead-dark py-16">
-        <h2 class="text-center text-surestead-light-green text-2xl font-bold font-outfit mb-12">Our Services</h2>
-      <div class="max-w-5xl mx-auto grid grid-rows-5 gap-12">
+        <h2 class="text-center text-surestead-light-green text-3xl uppercase font-bold font-outfit mb-12">Our Services</h2>
+      <div class="max-w-4xl mx-auto space-y-12">
         <!-- Accordion Row 1 -->
         <div class="grid grid-cols-7 items-start">
-          <div class="col-span-2 flex justify-center items-start pt-6">
-            <img src="/services/Icon_7884276.svg" alt="Maintenance & Vendor Coordination" class="w-12 h-12" />
+          <div class="col-span-2 flex justify-center items-start pl-10 ">
+            <img src="/services/Icon_7884276.svg" alt="Maintenance & Vendor Coordination" class="w-18 h-18" />
           </div>
           <div class="col-span-5">
             <div class="relative">
-              <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Maintenance & Vendor Coordination</div>
-              <div class="flex items-start">
-                <div class="accordion-content flex-1 pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0;">
-                  We take a proactive approach to property upkeep and vendor management, resolving issues early to minimize disruptions.
-                  <ul class="list-disc pl-6 mt-2">
-                    <li>Preventive maintenance calendars and routine inspections</li>
-                    <li>Vendor selection, scoring, and performance tracking</li>
-                    <li>Capital planning and supervision aligned with your goals</li>
-                    <li>Rapid response escalation through our service platform</li>
-                  </ul>
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Maintenance & Vendor Coordination</div>
+                  <div class="text-[#f1f2f2] text-base mb-2">We take a proactive approach to property upkeep and vendor management, resolving issues early to minimize disruptions.</div>
                 </div>
-                <button type="button" class="accordion-button ml-4 bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 -mt-3" onclick="toggleAccordion(0)">
+                <button type="button" class="accordion-button bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 ml-4 mt-6 flex-shrink-0" onclick="toggleAccordion(0)">
                   <span class="accordion-arrow transition-all duration-200 text-white hover:text-surestead-light-green text-6xl">&#8250;</span>
                 </button>
+              </div>
+              <div class="accordion-content pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0; opacity: 0;">
+                <ul class="list-disc pl-6 mt-4">
+                  <li>Preventive maintenance calendars and routine inspections</li>
+                  <li>Vendor selection, scoring, and performance tracking</li>
+                  <li>Capital planning and supervision aligned with your goals</li>
+                  <li>Rapid response escalation through our service platform</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <!-- Accordion Row 2 -->
         <div class="grid grid-cols-7 items-start">
-          <div class="col-span-2 flex justify-center items-start pt-6">
-            <img src="/services/Icon_7832092.svg" alt="Financial Management & Reporting" class="w-12 h-12" />
+          <div class="col-span-2 flex justify-center items-start pl-10">
+            <img src="/services/Icon_7832092.svg" alt="Financial Management & Reporting" class="w-18 h-18" />
           </div>
           <div class="col-span-5">
             <div class="relative">
-              <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Financial Management & Reporting</div>
-              <div class="flex items-start">
-                <div class="accordion-content flex-1 pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0;">
-                  We deliver transparent financial reporting you can understand and trust—thorough and free of information overload.
-                  <ul class="list-disc pl-6 mt-2">
-                      <li>Monthly and annual reports with key takeaways</li>
-                      <li>Budget tracking and forecasting with variance analysis</li>
-                      <li>Cash flow monitoring and reserve strategy</li>
-                      <li>Customizable, on-demand reporting through our portal</li>
-                    </ul>
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Financial Management & Reporting</div>
+                  <div class="text-[#f1f2f2] text-base mb-2">We deliver transparent financial reporting you can understand and trust—thorough and free of information overload.</div>
                 </div>
-                <button type="button" class="accordion-button ml-4 bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 -mt-3" onclick="toggleAccordion(1)">
+                <button type="button" class="accordion-button bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 ml-4 mt-6 flex-shrink-0" onclick="toggleAccordion(1)">
                   <span class="accordion-arrow transition-all duration-200 text-white hover:text-surestead-light-green text-6xl">&#8250;</span>
                 </button>
+              </div>
+              <div class="accordion-content pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0; opacity: 0;">
+                <ul class="list-disc pl-6 mt-4">
+                    <li>Monthly and annual reports with key takeaways</li>
+                    <li>Budget tracking and forecasting with variance analysis</li>
+                    <li>Cash flow monitoring and reserve strategy</li>
+                    <li>Customizable, on-demand reporting through our portal</li>
+                  </ul>
               </div>
             </div>
           </div>
         </div>
         <!-- Accordion Row 3 -->
         <div class="grid grid-cols-7 items-start">
-          <div class="col-span-2 flex justify-center items-start pt-6">
-            <img src="/services/Icon_7725297.svg" alt="Lease & Compliance Administration" class="w-12 h-12" />
+          <div class="col-span-2 flex justify-center items-start pl-10">
+            <img src="/services/Icon_7725297.svg" alt="Lease & Compliance Administration" class="w-18 h-18" />
           </div>
           <div class="col-span-5">
             <div class="relative">
-              <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Lease & Compliance Administration</div>
-              <div class="flex items-start">
-                <div class="accordion-content flex-1 pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0;">
-                  We ensure your property remains well-documented, legally sound, and protected from risk.
-                  <ul class="list-disc pl-6 mt-2">
-                    <li>Lease lifecycle support: drafting, enforcement, and renewals</li>
-                    <li>Vendor qualification and contract oversight</li>
-                    <li>Monitoring of local regulations and housing requirements</li>
-                    <li>Internal workflows for lease approvals and documentation</li>
-                  </ul>
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Lease & Compliance Administration</div>
+                  <div class="text-[#f1f2f2] text-base mb-2">We ensure your property remains well-documented, legally sound, and protected from risk.</div>
                 </div>
-                <button type="button" class="accordion-button ml-4 bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 -mt-3" onclick="toggleAccordion(2)">
+                <button type="button" class="accordion-button bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 ml-4 mt-6 flex-shrink-0" onclick="toggleAccordion(2)">
                   <span class="accordion-arrow transition-all duration-200 text-white hover:text-surestead-light-green text-6xl">&#8250;</span>
                 </button>
+              </div>
+              <div class="accordion-content pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0; opacity: 0;">
+                <ul class="list-disc pl-6 mt-4">
+                  <li>Lease lifecycle support: drafting, enforcement, and renewals</li>
+                  <li>Vendor qualification and contract oversight</li>
+                  <li>Monitoring of local regulations and housing requirements</li>
+                  <li>Internal workflows for lease approvals and documentation</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <!-- Accordion Row 4 -->
         <div class="grid grid-cols-7 items-start">
-          <div class="col-span-2 flex justify-center items-start pt-6">
-            <img src="/services/Icon_7725310.svg" alt="Communication & Governance Support" class="w-12 h-12" />
+          <div class="col-span-2 flex justify-center items-start pl-10">
+            <img src="/services/Icon_7725310.svg" alt="Communication & Governance Support" class="w-18 h-18" />
           </div>
           <div class="col-span-5">
             <div class="relative">
-              <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Communication & Governance Support</div>
-              <div class="flex items-start">
-                <div class="accordion-content flex-1 pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0;">
-                  We help keep communication timely, focused, and inclusive so that nothing gets missed and everyone stays aligned.
-                  <ul class="list-disc pl-6 mt-2">
-                    <li>Annual meeting planning and documentation</li>
-                    <li>Concise board and owner reporting</li>
-                    <li>Prompt response to board and resident requests</li>
-                    <li>Ongoing digital and in-person feedback loops</li>
-                  </ul>
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Communication & Governance Support</div>
+                  <div class="text-[#f1f2f2] text-base mb-2">We help keep communication timely, focused, and inclusive so that nothing gets missed and everyone stays aligned.</div>
                 </div>
-                <button type="button" class="accordion-button ml-4 bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 -mt-3" onclick="toggleAccordion(3)">
+                <button type="button" class="accordion-button bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 ml-4 mt-6 flex-shrink-0" onclick="toggleAccordion(3)">
                   <span class="accordion-arrow transition-all duration-200 text-white hover:text-surestead-light-green text-6xl">&#8250;</span>
                 </button>
+              </div>
+              <div class="accordion-content pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0; opacity: 0;">
+                <ul class="list-disc pl-6 mt-4">
+                  <li>Annual meeting planning and documentation</li>
+                  <li>Concise board and owner reporting</li>
+                  <li>Prompt response to board and resident requests</li>
+                  <li>Ongoing digital and in-person feedback loops</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <!-- Accordion Row 5 -->
         <div class="grid grid-cols-7 items-start">
-          <div class="col-span-2 flex justify-center items-start pt-6">
-            <img src="/services/Icon_6672798.svg" alt="Strategic Planning & Advisory" class="w-12 h-12" />
+          <div class="col-span-2 flex justify-center items-start pl-10">
+            <img src="/services/Icon_6672798.svg" alt="Strategic Planning & Advisory" class="w-18 h-18" />
           </div>
           <div class="col-span-5">
             <div class="relative">
-              <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Strategic Planning & Advisory</div>
-              <div class="flex items-start">
-                <div class="accordion-content flex-1 pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0;">
-                  <div class="w-[90%]">We partner with boards and owners to support thoughtful, <span style="white-space: nowrap;">long-term decision-making.</span></div> 
-                  <ul class="list-disc pl-6 mt-2">
-                    <li>Capital improvement planning through cost-benefit analysis</li>
-                    <li>Reserve study coordination and funding analysis</li>
-                    <li>Board orientation and decision-making support</li>
-                    <li>Data-driven recommendations for rent, upgrades, and retention</li>
-                  </ul>
+              <div class="flex items-start justify-between">
+                <div class="flex-1">
+                  <div class="text-surestead-light-green text-lg font-bold text-left mb-2">Strategic Planning & Advisory</div>
+                  <div class="text-[#f1f2f2] text-base mb-2">We partner with boards and owners to support thoughtful, <span style="white-space: nowrap;">long-term decision-making.</span></div>
                 </div>
-                <button type="button" class="accordion-button ml-4 bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 -mt-3" onclick="toggleAccordion(4)">
+                <button type="button" class="accordion-button bg-transparent focus:outline-none hover:bg-opacity-10 hover:bg-white transition-colors duration-200 ml-4 mt-6 flex-shrink-0" onclick="toggleAccordion(4)">
                   <span class="accordion-arrow transition-all duration-200 text-white hover:text-surestead-light-green text-6xl">&#8250;</span>
                 </button>
+              </div>
+              <div class="accordion-content pb-6 text-[#f1f2f2] text-base overflow-hidden transition-all duration-300 ease-in-out bg-surestead-dark" style="max-height: 0; opacity: 0;">
+                <ul class="list-disc pl-6 mt-4">
+                  <li>Capital improvement planning through cost-benefit analysis</li>
+                  <li>Reserve study coordination and funding analysis</li>
+                  <li>Board orientation and decision-making support</li>
+                  <li>Data-driven recommendations for rent, upgrades, and retention</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -326,6 +336,17 @@ that shape every interaction.
     </section>
 
 </BaseLayout>
+
+<style>
+  .accordion-arrow {
+    display: inline-block;
+    transform-origin: center;
+  }
+  
+  .accordion-content {
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+</style>
 
 <script>
   // Declare global function type
@@ -337,7 +358,7 @@ that shape every interaction.
   
   // Wait for the DOM to be fully loaded
   document.addEventListener('DOMContentLoaded', function() {
-    let openIndex = 0;
+    let openIndex = -1; // Start with no accordion open
     
     // Make toggleAccordion function globally available
     window.toggleAccordion = function(idx: number) {
@@ -355,9 +376,11 @@ that shape every interaction.
       accordionContents.forEach((el, i) => {
         const element = el as HTMLElement;
         if (i === openIndex) {
-          element.style.maxHeight = '400px'; // Increased height for expanded content
+          element.style.maxHeight = '600px'; // Increased height for expanded content
+          element.style.opacity = '1';
         } else {
-          element.style.maxHeight = '3rem'; // Show the full preview text when closed
+          element.style.maxHeight = '0';
+          element.style.opacity = '0';
         }
       });
       
@@ -365,17 +388,18 @@ that shape every interaction.
         const element = el as HTMLElement;
         if (i === openIndex) {
           element.style.transform = 'rotate(90deg)';
+          element.style.transition = 'transform 0.3s ease-in-out';
           element.classList.remove('text-white');
           element.classList.add('text-surestead-light-green');
         } else {
           element.style.transform = 'rotate(0deg)';
+          element.style.transition = 'transform 0.3s ease-in-out';
           element.classList.remove('text-surestead-light-green');
           element.classList.add('text-white');
         }
       });
     };
     
-    // Initialize the first accordion as open
-    window.toggleAccordion(0);
+    // Don't auto-open any accordion on page load
   });
 </script>
