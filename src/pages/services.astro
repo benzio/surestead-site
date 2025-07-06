@@ -10,7 +10,7 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 			<img src="/services/ServicesNav-6188_SPS_1500.jpg" alt="Lighthouse" class="object-cover object-[center_50%] w-full h-full" loading="eager" width="1500" height="1000" />
 		</picture>
 		<div class="relative z-10 flex flex-col w-full h-full text-center py-14 pt-10 md:pt-20">
-			<h1 class="text-surestead-dark sm:max-w-full text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-[2.25rem] font-bold font-outfit mt-6 mb-0 font-outfit tracking-normal">
+			<h1 class="text-surestead-dark sm:max-w-full text-xl sm:text-2xl md:text-lg [@media(min-width:1024px)_and_(max-width:1200px)]:text-[1.3rem]  [@media(min-width:1201px)_and_(max-width:1366px)]:text-[1.5rem] lg:text-[2.25rem] font-bold font-outfit mt-30 mb-0 font-outfit tracking-normal">
 				THE SURESTEAD DIFFERENCE
 			</h1>
 			
@@ -33,24 +33,26 @@ import BaseLayout from "../layouts/Base_Layout.astro";
               Client Partnership
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-4 items-center">
-            <div class="col-span-12 sm:col-span-2 flex justify-center mb-6 sm:mb-0">
+          <div class="flex flex-col md:flex-row md:items-center gap-4 -ml-8">
+            <div class="flex-shrink-0 flex justify-center md:justify-center pb-2 md:pb-2 pl-8 md:pl-0">
               <!-- House Icon SVG -->
               <picture>
                 <source srcset="/services/SPS_mrk_ico_pos_rgb.svg" media="(min-width: 768px)" />
                 <img src="/services/SPS_mrk_ico_pos_rgb.svg" alt="Client Partnership" class="object-contain object-[center_20%] w-12 h-12" loading="eager" width="1500" height="1000" />
               </picture>
             </div>
-            <div class="col-span-12 sm:col-span-5 mb-6 sm:mb-0 px-2">
-              <p class="text-lg font-normal text-black">
-                To establish trust with our clients, we provide clarity, reliability, and personalized attention. At Surestead, we believe proactive communication helps you feel informed and in control of <span style="white-space: nowrap;">your properties.</span> 
-              </p>
-            </div>
-            <div class="col-span-12 sm:col-span-5 px-2">
-              <p class="text-lg font-normal text-black">
-                Real-time financial reporting, coupled with on-demand portal access, enables you to understand and manage your investments effectively. We send clear monthly summaries, detailed action items, <span style="white-space: nowrap;">and performance metrics.</span>
-              </p>
-            </div>
+                          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="pl-20 pr-4 md:px-10">
+                  <p class="text-lg font-normal text-black h-full">
+                    To establish trust with our clients, we provide clarity, reliability, and personalized attention. At Surestead, we believe proactive communication helps you feel informed and in control of <span style="white-space: nowrap;">your properties.</span> 
+                  </p>
+                </div>
+                <div class="pl-20 pr-4 md:px-8">
+                  <p class="text-lg font-normal text-black h-full">
+                    Real-time financial reporting, coupled with on-demand portal access, enables you to understand and manage your investments effectively. We send clear monthly summaries, detailed action items, <span style="white-space: nowrap;">and performance metrics.</span>
+                  </p>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -61,23 +63,25 @@ import BaseLayout from "../layouts/Base_Layout.astro";
               Resident Services & Engagement
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-4 items-center">
-            <div class="col-span-12 sm:col-span-2 flex justify-center mb-6 sm:mb-0">
+          <div class="flex flex-col md:flex-row md:items-center gap-4 -ml-8">
+            <div class="flex-shrink-0 flex justify-center md:justify-center pb-2 md:pb-2 pl-8 md:pl-0">
               <!-- House Icon SVG -->
               <picture>
                 <source srcset="/services/SPS_mrk_ico_pos_rgb.svg" media="(min-width: 768px)" />
                 <img src="/services/SPS_mrk_ico_pos_rgb.svg" alt="Client Partnership" class="object-contain object-[center_20%] w-12 h-12" loading="eager" width="1500" height="1000" />
               </picture>
             </div>
-            <div class="col-span-12 sm:col-span-5 mb-6 sm:mb-0 px-2">
-              <p class="text-lg font-normal text-black">
-                We deliver accountable service by balancing automation with personal care. Each resident receives an onboarding kit with key property information. Communication is centralized through our platform for consistent response times and tailored support.
-              </p>
-            </div>
-            <div class="col-span-12 sm:col-span-5 px-2">
-              <p class="text-lg font-normal text-black">
-                We acknowledge resident concerns promptly and follow through with clear next steps. To support inclusive, ongoing improvement, we gather feedback through surveys, anonymous suggestion forms, and exit interviews. We host community events to foster connection.
-              </p>
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div class="pl-20 pr-4 md:px-10">
+                <p class="text-lg font-normal text-black h-full">
+                  We deliver accountable service by balancing automation with personal care. Each resident receives an onboarding kit with key property information. Communication is centralized through our platform for consistent response times and tailored support.
+                </p>
+              </div>
+              <div class="pl-20 pr-4 md:px-8">
+                <p class="text-lg font-normal text-black h-full">
+                  We acknowledge resident concerns promptly and follow through with clear next steps. To support inclusive, ongoing improvement, we gather feedback through surveys, anonymous suggestion forms, and exit interviews. We host community events to foster connection.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -88,30 +92,32 @@ import BaseLayout from "../layouts/Base_Layout.astro";
                 Empathetic Perspectives
               </div>
             </div>
-            <div class="grid grid-cols-12 gap-4 items-center">
-              <div class="col-span-12 sm:col-span-2 flex justify-center mb-6 sm:mb-0">
+            <div class="flex flex-col md:flex-row md:items-center gap-4 -ml-8">
+              <div class="flex-shrink-0 flex justify-center md:justify-center pb-2 md:pb-0 pl-8 md:pl-0">
                 <!-- House Icon SVG -->
                 <picture>
                   <source srcset="/services/SPS_mrk_ico_pos_rgb.svg" media="(min-width: 768px)" />
                   <img src="/services/SPS_mrk_ico_pos_rgb.svg" alt="Client Partnership" class="object-contain object-[center_20%] w-12 h-12" loading="eager" width="1500" height="1000" />
                 </picture>
               </div>
-              <div class="col-span-12 sm:col-span-5 mb-6 sm:mb-0 px-2">
-                <p class="text-lg font-normal text-black">
-                    We define expectations upfront, ensuring open
-                    communication and a fair process. When
-                    conflicts arise we maintain professionalism
-                    and transparency with all stakeholders.
-                    
-                </p>
-              </div>
-              <div class="col-span-12 sm:col-span-5 px-2">
-                <p class="text-lg font-normal text-black">
-                    By interpreting needs instead of merely relaying
-                    messages, we act as trusted advisors, balancing
-                    tenant satisfaction and owner priorities through
-                    data-driven insights.
-                </p>
+              <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="pl-20 pr-4 md:px-10">
+                  <p class="text-lg font-normal text-black h-full">
+                      We define expectations upfront, ensuring open
+                      communication and a fair process. When
+                      conflicts arise we maintain professionalism
+                      and transparency with all stakeholders.
+                      
+                  </p>
+                </div>
+                <div class="pl-20 pr-4 md:px-8">
+                  <p class="text-lg font-normal text-black h-full">
+                      By interpreting needs instead of merely relaying
+                      messages, we act as trusted advisors, balancing
+                      tenant satisfaction and owner priorities through
+                      data-driven insights.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -124,33 +130,35 @@ import BaseLayout from "../layouts/Base_Layout.astro";
 
               </div>
             </div>
-            <div class="grid grid-cols-12 gap-4 items-center">
-              <div class="col-span-12 sm:col-span-2 flex justify-center mb-6 sm:mb-0">
+            <div class="flex flex-col md:flex-row md:items-center gap-4 -ml-8">
+              <div class="flex-shrink-0 flex justify-center md:justify-center pb-2 md:pb-2 pl-8 md:pl-0">
                 <!-- House Icon SVG -->
                 <picture>
                   <source srcset="/services/SPS_mrk_ico_pos_rgb.svg" media="(min-width: 768px)" />
                   <img src="/services/SPS_mrk_ico_pos_rgb.svg" alt="Client Partnership" class="object-contain object-[center_20%] w-12 h-12" loading="eager" width="1500" height="1000" />
                 </picture>
               </div>
-              <div class="col-span-12 sm:col-span-5 mb-6 sm:mb-0 px-2">
-                <p class="text-lg font-normal text-black">
-                    Behind the scenes, we use modern property
+              <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="pl-20 pr-4 md:px-10">
+                  <p class="text-lg font-normal text-black h-full">
+                      Behind the scenes, we use modern property
 management software to deliver real-time
 financial accuracy, automated workflows,
 documented compliance, and anytime portal
 access for owners and residents.
-                    
-                </p>
-              </div>
-              <div class="col-span-12 sm:col-span-5 px-2">
-                <p class="text-lg font-normal text-black">
-                    Standardized procedures and ongoing staff
+                      
+                  </p>
+                </div>
+                <div class="pl-20 pr-4 md:px-8">
+                  <p class="text-lg font-normal text-black h-full">
+                      Standardized procedures and ongoing staff
 training ensure our team provides timely and
 reliable service. We identify and address issues
 early through inspections, preventive
 maintenance, and attentive communication.
 
-                </p>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -162,31 +170,33 @@ maintenance, and attentive communication.
 
               </div>
             </div>
-            <div class="grid grid-cols-12 gap-4 items-center">
-              <div class="col-span-12 sm:col-span-2 flex justify-center mb-6 sm:mb-0">
+            <div class="flex flex-col md:flex-row md:items-center gap-4 -ml-8">
+              <div class="flex-shrink-0 flex justify-center md:justify-center pb-2 md:pb-2 pl-8 md:pl-0">
                 <!-- House Icon SVG -->
                 <picture>
                   <source srcset="/services/SPS_mrk_ico_pos_rgb.svg" media="(min-width: 768px)" />
                   <img src="/services/SPS_mrk_ico_pos_rgb.svg" alt="Client Partnership" class="object-contain object-[center_20%] w-12 h-12" loading="eager" width="1500" height="1000" />
                 </picture>
               </div>
-              <div class="col-span-12 sm:col-span-5 mb-6 sm:mb-0 px-2">
-                <p class="text-lg font-normal text-black">
-                    We stay ahead of industry changes by closely
+              <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="pl-20 pr-4 md:px-10">
+                  <p class="text-lg font-normal text-black h-full">
+                      We stay ahead of industry changes by closely
 monitoring regulations, strengthening vendor
 partnerships, and investing in continuing
 education for team members.
-                    
-                </p>
-              </div>
-              <div class="col-span-12 sm:col-span-5 px-2">
-                <p class="text-lg font-normal text-black">
-                    Frequent feedback from owners and residents
+                      
+                  </p>
+                </div>
+                <div class="pl-20 pr-4 md:px-8">
+                  <p class="text-lg font-normal text-black h-full">
+                      Frequent feedback from owners and residents
 informs how we adapt and improve. Care,
 communication, and consistency are core values
 that shape every interaction.
 
-                </p>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
